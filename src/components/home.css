@@ -1,0 +1,27 @@
+*{
+    margin:0;
+    padding:0
+}
+
+
+
+.color-block{
+    background-color: #05F2F2 ;
+    position: fixed;
+    height: 200%;
+    width: 100%;
+    transform: rotate(-15deg);
+    left: -83%;
+    top: -50%;
+    /* opacity: 0.4; */
+} 
+
+.lg_image {
+    background-color: blue ;
+    /* border: 2px solid white; */
+    /* margin-top: 200px; */
+    /* margin-left: 100px; */
+    /* height: 400px; */
+    /* width: 35%; */
+    /* z-index: 1; */
+}
