@@ -14,6 +14,8 @@ import Contact from './components/Contact';
 
 function App() {
   
+  
+  // document.body.style.backgroundColor='#343a40';
   const [mode , setmode] = useState('light');
   const togglemode = ()=>{
     if(mode ==='dark'){

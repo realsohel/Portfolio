@@ -1,8 +1,10 @@
 import React from 'react'
+import Skills from './Skills'
 
 const About = () => {
     return (
-        <>  
+        <> 
+        <div className='text-white'>
             <div className='mr-28 lg:mr-16'>
                 <h2 className=' mt-20 w-[54%] justify-center m-auto  float-right font-bold  md:text-4xl text-3xl lg:text-6xl text-white lg:mr-20 mb-6'>ABOUT <span className='text-[#05F2F2] ' >ME</span></h2>
             </div>
@@ -44,7 +46,17 @@ const About = () => {
                     </ul>
                 </div>
                 
-                <hr className='m-auto w-[80%]  mt-10'/>
+            <hr className='m-auto w-[80%]  mt-10'/>
+
+                
+            <div className='Personal w-[56%] m-auto  float-right  mb-10  lg:mr-0 '>
+                <h2 className='mt-10 font-bold  md:text-2xl text-xl lg:text-2xl'>MY SKILLS</h2>
+            </div>
+            {/* lg:mr-48 */}
+            <div className='skill-box float-right mr-28 md:mr-36 '>
+                <Skills/>
+            </div>
+            
 
 
 
@@ -94,7 +106,7 @@ const About = () => {
             </div> */}
 
 
-
+        </div>
         </>
     )
 }
