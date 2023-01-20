@@ -5,7 +5,7 @@ const Skills = () => {
     return (
         // mt-[1rem] grid grid-cols-4 relative
         <>
-            <div className="box mr-0 ml-10 lg:mr-20 mb-32">
+            <div className="box mr-0 ml-10 lg:mr-20 mb-28">
                 <div className="progress first ">
                     <span className="progress-left">
                         <span className="progress-bar"></span>
