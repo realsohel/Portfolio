@@ -1,6 +1,7 @@
 import React from 'react'
 import man from "./man-modified.png"
 import manlg from "./man.jpg"
+
 import "./home.css"
 const Home = () => {
     return (
@@ -23,6 +24,7 @@ const Home = () => {
                     </p>
                 </div>
             </div>
+            
 
             {/* <div className="float-right mt-72 ">hello</div> */}
         </>

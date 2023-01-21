@@ -21,11 +21,11 @@ const Navbar = () => {
         {/* For Laptop viewfi! */}
         <nav>
             <ul className='mt-52 float-right hidden lg:block mr-6 fixed right-0  '>
-                <li>
-                    <Link to="/" className="btn bg-[#05F2F2] hover:bg-gray-300 float-right my-3  p-2  rounded-full  flex"> <span className='mt-1 font-medium  mx-4 hidden hover:block ' >HOME</span><HomeIcon className='hover:block' sx={{ fontSize: 30 }} /> </Link>
+                <li className="hover:block">
+                    <Link to="/" className="btn bg-[#05F2F2] hover:bg-gray-300 float-right my-3  p-2  rounded-full  flex"> <h2 className='mt-1 font-medium  mx-4   ' >HOME</h2><HomeIcon className='hover:block' sx={{ fontSize: 30 }} /> </Link>
                 </li>
                 <li>
-                    <Link to="/about" className=" btn bg-[#05F2F2] hover:bg-gray-300 float-right my-3  p-2 rounded-full flex"><h1 className='mt-1 font-medium ' >HOME</h1> <AccountCircleIcon sx={{ fontSize: 30 }} /> </Link>
+                    <Link to="/about" className=" btn bg-[#05F2F2] hover:bg-gray-300 float-right my-3  p-2 rounded-full flex"><h2 className='mt-1 font-medium ' >HOME</h2> <AccountCircleIcon sx={{ fontSize: 30 }} /> </Link>
                 </li>
                 <li>
                     <Link to="/contact" className="btn bg-[#05F2F2] hover:bg-gray-300 float-right my-3  p-2 rounded-full "> <MailIcon sx={{ fontSize: 30 }} /> </Link>
