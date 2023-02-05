@@ -14,9 +14,3 @@ body{
     transition: background-color 0.1s ease-in-out;
 }
 
-li h2{
-    display: none;
-}
-li h2:hover{
-    display: block;
-}

@@ -35,7 +35,7 @@ const Skills = () => {
                     <span className="progress-right">
                         <span className="progress-bar"></span>
                     </span>
-                    <div className="progress-value font-bold">60%</div>
+                    <div className="progress-value font-bold">50%</div>
                     <div className="language mt-40 justify-center text-center font-bold text-xl">JAVASCRIPT</div>
                 </div>
 
@@ -57,7 +57,7 @@ const Skills = () => {
                     <span className="progress-right">
                         <span className="progress-bar "></span>
                     </span>
-                    <div className="progress-value font-bold">90%</div>
+                    <div className="progress-value font-bold">75%</div>
                     <div className="language mt-40 justify-center text-center font-bold text-xl">C++</div>
                 </div>
 

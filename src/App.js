@@ -11,12 +11,25 @@ import {
 } from "react-router-dom";
 import About from './components/About';
 import Contact from './components/Contact';
+import Blog from './components/Blog';
 
 function App() {
   
   
   // document.body.style.backgroundColor='#343a40';
   const [mode , setmode] = useState('light');
+  // const [alert, setAlert] = useState({msg:""});
+
+  // const showAlert = (message)=>{
+  //     setAlert({
+  //       msg: message,
+  //     })
+  //     setTimeout(() => {
+  //         setAlert({msg:""});
+  //     }, 3000);
+  // }
+
+
   const togglemode = ()=>{
     if(mode ==='dark'){
       setmode('light');
@@ -37,7 +50,8 @@ function App() {
       <Routes>
         <Route exact path='/' element={<Home/>}/>
         <Route exact path='/about' element={<About/>}/>
-        <Route exact path='/contact' element={<Contact/>}/>
+        <Route exact path='/contact' element={<Contact />}/>
+        <Route exact path='/blogs' element={<Blog/>}/>
       </Routes>
 
     
