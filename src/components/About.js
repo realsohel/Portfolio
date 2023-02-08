@@ -66,7 +66,7 @@ const About = () => {
             <div className='Personal w-[62%] m-auto  float-right   mr-12 md:mr-16 lg:mr-0 '>
                 <h2 className='mt-10 font-bold  md:text-2xl text-xl lg:text-2xl'>EXPERIENCE & EDUCATION</h2>
             </div>
-            <div className='skill-box ml-12 lg:ml-32  mt-32 lg:mt-48 '>
+            <div className=' ml-12 lg:ml-32  mt-8 lg:mt-24 '>
                 <Experience/>
             </div>
             

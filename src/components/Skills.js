@@ -73,6 +73,8 @@ const Skills = () => {
                 </div>
 
                 
+
+                
             </div>
         </>
     )

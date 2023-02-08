@@ -14,10 +14,15 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import SendIcon from '@mui/icons-material/Send';
 import Alertcon from './Alertcon';
 
+import { db } from '../firebase-config';
+import {collection , addDoc} from "firebase/firestore";
+
 const Contact = (props) => {
 
     const[user , setUser] = useState({name: "", email: "", subject:"" , msg:""});
     const [alert, setAlert] = useState({msg:""});
+
+    const userCollectionRef = collection(db,"users");
 
     const showAlert = (message,type)=>{
         setAlert({
@@ -35,23 +40,27 @@ const Contact = (props) => {
         setUser({...user , [e.target.name]:e.target.value});
     }
 
+    // const res = await fetch( // Connecting to Database.
+    //             "https://portfoliocontactform-9cf5b-default-rtdb.firebaseio.com/contactform.json",
+    //             {
+    //                 method:"POST",
+    //                 headers:{
+    //                     "Content-Type":"application/json",
+    //                 },
+    //                 body:JSON.stringify({
+    //                     name,email,subject,msg,
+    //                 }),
+    //             }
+    //         );
+
+
     const PostData= async(e)=>{
         e.preventDefault();
         const {name, email, subject,msg} = user;
 
         if(name && email &&  subject&& msg){
-            const res = await fetch( // Connecting to Database.
-                "https://portfoliocontactform-9cf5b-default-rtdb.firebaseio.com/contactform.json",
-                {
-                    method:"POST",
-                    headers:{
-                        "Content-Type":"application/json",
-                    },
-                    body:JSON.stringify({
-                        name,email,subject,msg,
-                    }),
-                }
-            );
+            const res = await addDoc(userCollectionRef, {
+                name:name, email:email, subject:subject , msg:msg});
 
             if(res){
                 setUser({name: "", email: "", subject:"" , msg:""});

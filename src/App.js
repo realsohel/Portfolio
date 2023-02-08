@@ -11,7 +11,7 @@ import {
 } from "react-router-dom";
 import About from './components/About';
 import Contact from './components/Contact';
-import Blog from './components/Blog';
+import Portfolio from './components/Portfolio';
 
 function App() {
   
@@ -50,8 +50,8 @@ function App() {
       <Routes>
         <Route exact path='/' element={<Home/>}/>
         <Route exact path='/about' element={<About/>}/>
+        <Route exact path='/portfolio' element={<Portfolio/>}/>
         <Route exact path='/contact' element={<Contact />}/>
-        <Route exact path='/blogs' element={<Blog/>}/>
       </Routes>
 
     
