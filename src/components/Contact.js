@@ -19,7 +19,7 @@ import {collection , addDoc} from "firebase/firestore";
 
 const Contact = (props) => {
 
-    const[user , setUser] = useState({name: "", email: "", subject:"" , msg:""});
+    const[user , setUser] = useState({name: "", email: "", subject:"" , msg:"" , date:""});
     const [alert, setAlert] = useState({msg:""});
 
     const userCollectionRef = collection(db,"users");
@@ -40,27 +40,17 @@ const Contact = (props) => {
         setUser({...user , [e.target.name]:e.target.value});
     }
 
-    // const res = await fetch( // Connecting to Database.
-    //             "https://portfoliocontactform-9cf5b-default-rtdb.firebaseio.com/contactform.json",
-    //             {
-    //                 method:"POST",
-    //                 headers:{
-    //                     "Content-Type":"application/json",
-    //                 },
-    //                 body:JSON.stringify({
-    //                     name,email,subject,msg,
-    //                 }),
-    //             }
-    //         );
 
 
     const PostData= async(e)=>{
         e.preventDefault();
-        const {name, email, subject,msg} = user;
+        const {name, email, subject,msg } = user;
+
+        let currDate = new Date();
 
         if(name && email &&  subject&& msg){
             const res = await addDoc(userCollectionRef, {
-                name:name, email:email, subject:subject , msg:msg});
+                name:name, email:email, subject:subject , msg:msg , date:currDate});
 
             if(res){
                 setUser({name: "", email: "", subject:"" , msg:""});

@@ -1,5 +1,5 @@
 
-    var experience = [
+    let experience = [
         {
             "id":"0",
             "year":"PRESENT",

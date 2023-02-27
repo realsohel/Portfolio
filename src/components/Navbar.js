@@ -24,7 +24,7 @@ const Navbar = () => {
         <nav>
             <ul className='mt-52 float-right   mr-6 fixed right-0  hidden lg:block'>
                 <li className="">
-                    <Link to="/" className="btn bg-[#05F2F2] hover:bg-gray-300 float-right my-3  p-2  rounded-full  flex"> <h2 className='mt-1 font-medium  mx-4 hidden hover:inline-block ' >HOME</h2><HomeIcon className='hover:block' sx={{ fontSize: 30 }} /> </Link>
+                    <Link to="/" className="displaybtn bg-[#05F2F2] hover:bg-gray-300 float-right my-3  p-2  rounded-full  flex"> <span className='h2class mt-1 font-medium  mx-4 ' >HOME</span><HomeIcon className='hovering' sx={{ fontSize: 30 }} /> </Link>
                 </li>
                 <li>
                     <Link to="/about" className=" btn bg-[#05F2F2] hover:bg-gray-300 float-right my-3  p-2 rounded-full flex"><h2 className='mt-1 font-medium hidden ' >HOME</h2> <AccountCircleIcon sx={{ fontSize: 30 }} /> </Link>

@@ -14,3 +14,36 @@ body{
     transition: background-color 0.1s ease-in-out;
 }
 
+/* .img-box{
+    justify-content: space-between;
+    font-size: 25px;
+    font-weight: bold;
+    
+    top: 300px;
+    margin-left: 37px;
+    position: absolute;
+    transform: translate(0%, 0%);
+}
+
+.img-box:hover{
+    opacity: 0.6;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out
+    
+} */
+
+.displaybtn{
+    display: block;
+}
+
+.h2class{
+    display: none;
+    
+}
+
+.displaybtn:hover + .h2class{
+    display: block;
+    
+}
+
