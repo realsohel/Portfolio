@@ -49,15 +49,23 @@ const Contact = (props) => {
         let currDate = new Date();
 
         if(name && email &&  subject&& msg){
-            const res = await addDoc(userCollectionRef, {
-                name:name, email:email, subject:subject , msg:msg , date:currDate});
 
-            if(res){
-                setUser({name: "", email: "", subject:"" , msg:""});
+            let chkemail = email.includes("@");
+            if(chkemail){
+                const res = await addDoc(userCollectionRef, {
+                    name:name, email:email, subject:subject , msg:msg , date:currDate});
+
+                if(res){
+                    setUser({name: "", email: "", subject:"" , msg:""});
+                    document.getElementById('alertdiv').style.display="block";
+                    showAlert("Your message have been successfully submitted." , "success");
+                    
+                    
+                }
+            }
+            else{
                 document.getElementById('alertdiv').style.display="block";
-                showAlert("Your message have been successfully submitted." , "success");
-                
-                
+            showAlert("Enter the email address correctly.","error");
             }
         }
         else{
@@ -118,7 +126,7 @@ const Contact = (props) => {
                         </div>
                     </div>
 
-                    <div className="social-media mt-12 space-x-4 mb-8">
+                    <div className="social-media mt-12 space-x-3 mb-8 ">
                         <a  href="https://www.facebook.com/sohail.salmani.3975" rel="noreferrer" target="_blank"><span className='w-[20%] rounded-full p-2 bg-[#05F2F2] text-black hover:bg-gray-300'><FacebookIcon/></span></a>
                         <a  href="https://www.instagram.com/sohail.salmani.400054/" rel="noreferrer" target="_blank"><span className='w-[20%] rounded-full p-2 bg-[#05F2F2] text-black hover:bg-gray-300'><InstagramIcon/></span></a>
                         <a  href="https://twitter.com/real_sohel_" rel="noreferrer" target="_blank"><span className='w-[20%] rounded-full p-2 bg-[#05F2F2] text-black hover:bg-gray-300'><TwitterIcon/></span></a>
@@ -131,7 +139,7 @@ const Contact = (props) => {
 
 
 
-                <div className="ml-6 lg:ml-16 mt-10 mb-20">
+                <div className="ml-6 lg:ml-20 mt-10 mb-20 ">
                     <form className="form mr-32" method='POST'>
                         <div className="md:flex md:space-x-6">
                         <span><input type="text" className='rounded-3xl px-16 py-2 bg-[#2f3235] outline-[#05F2F2] border text-center  '  value={user.name} name='name' placeholder='Enter Your Name' autoComplete='off' onChange={onChange} required/></span>
