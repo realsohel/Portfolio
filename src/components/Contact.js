@@ -143,7 +143,7 @@ const Contact = (props) => {
 
 
 
-                <div className="ml-6 lg:ml-20  mb-20 ">
+                <div className="ml-6 lg:ml-20 mt-10 mb-20 ">
                     <form className="form mr-32" method='POST'>
                         <div className="md:flex md:space-x-6">
                         <span><input type="text" className='rounded-3xl px-16 py-2 bg-[#2f3235] outline-[#05F2F2] border text-center  '  value={user.name} name='name' placeholder='Enter Your Name' autoComplete='off' onChange={onChange} required/></span>

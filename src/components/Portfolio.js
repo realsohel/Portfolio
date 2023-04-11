@@ -21,7 +21,7 @@ const Portfolio = () => {
                 
                 {portfolio.map((e)=>{
 
-                    return <div key={e.id} className="card shadow-lg shadow-cyan-500/50 w-[100%] md:w-[35%] lg:w-[25%] h-[350px] md:h-[390px] lg:h-[360px] mt-20 float-right rounded-md mr-4 md:ml-16 lg:ml-8  ">
+                    return <div key={e.id} className="card shadow-lg shadow-cyan-500/50 w-[100%] md:w-[35%] lg:w-[25%] h-[350px] md:h-[390px] lg:h-[360px] mt-10 float-right rounded-md mr-4 md:ml-16 lg:ml-8  ">
                         <a href={e.link} target={"_blank"} rel="noreferrer" >
                             <img src={e.img} alt="" className='lg:max-w-[100%] w-[800px] h-[200px] lg:h-[198px] rounded-md hover:opacity-80 cursor-pointer' /></a>
 

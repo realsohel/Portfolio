@@ -3,6 +3,9 @@ import Achievement from './Achievement'
 import Experience from './Experience'
 import Skills from './Skills'
 
+import "./Button.css"
+import DownloadIcon from '@mui/icons-material/Download';
+
 const About = () => {
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -53,6 +56,9 @@ const About = () => {
                             <span  className='font-bold text-md lg:text-2xl md:text-xl'>+91 9960997558 </span>
                         </li>
                     </ul>
+                </div>
+                <div>
+                    <a href="images/resume.pdf" download className='button font-bold px-2 border border-white ml-20  lg:ml-[34rem] '>Download Cv <span><DownloadIcon/></span> </a>
                 </div>
                 
             <hr className='m-auto w-[80%]  mt-10'/>
