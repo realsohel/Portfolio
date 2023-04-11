@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 // import manlg from "images/man.jpg"
 // import tictactoe from "./tictactoe.jpg"
 // import passwordgenerator from "./passwordgenerator.jpg"
@@ -6,6 +6,10 @@ import portfolio from './jsonfiles/portfolio'
 
 
 const Portfolio = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     return (
         <>
         <div>

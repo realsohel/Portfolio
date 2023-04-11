@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Achievement from './Achievement'
 import Experience from './Experience'
 import Skills from './Skills'
 
 const About = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     return (
         <> 
 

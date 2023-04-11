@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import 'animate.css';
 // import { Link } from 'react-router-dom';
 import "./Button.css"
@@ -18,8 +18,12 @@ import { db } from '../firebase-config';
 import {collection , addDoc} from "firebase/firestore";
 
 const Contact = (props) => {
+    
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
-    const[user , setUser] = useState({name: "", email: "", subject:"" , msg:"" , date:""});
+    const[user , setUser] = useState({name: "", email: "", subject:"" , msg:"" ,number:"", date:""});
     const [alert, setAlert] = useState({msg:""});
 
     const userCollectionRef = collection(db,"users");
@@ -44,19 +48,19 @@ const Contact = (props) => {
 
     const PostData= async(e)=>{
         e.preventDefault();
-        const {name, email, subject,msg } = user;
+        const {name, email, subject,msg, number } = user;
 
         let currDate = new Date();
 
-        if(name && email &&  subject&& msg){
+        if(name && email &&  subject&& msg && number){
 
             let chkemail = email.includes("@");
             if(chkemail){
                 const res = await addDoc(userCollectionRef, {
-                    name:name, email:email, subject:subject , msg:msg , date:currDate});
+                    name:name, email:email, subject:subject , msg:msg ,number:number, date:currDate});
 
                 if(res){
-                    setUser({name: "", email: "", subject:"" , msg:""});
+                    setUser({name: "", email: "", subject:"" , msg:"",number:""});
                     document.getElementById('alertdiv').style.display="block";
                     showAlert("Your message have been successfully submitted." , "success");
                     
@@ -87,7 +91,7 @@ const Contact = (props) => {
 
         
 
-            <div className="block lg:flex mt-8 lg:mt-12 float-right w-[100%]">
+            <div className="block lg:flex mt-8 lg:mt-8 float-right w-[100%]">
                 <div className="message ml-6 lg:ml-16 ">
 
                     <div className="md:text-3xl text-2xl  lg:text-4xl font-bold ">DON'T BE SHY !</div>
@@ -139,7 +143,7 @@ const Contact = (props) => {
 
 
 
-                <div className="ml-6 lg:ml-20 mt-10 mb-20 ">
+                <div className="ml-6 lg:ml-20  mb-20 ">
                     <form className="form mr-32" method='POST'>
                         <div className="md:flex md:space-x-6">
                         <span><input type="text" className='rounded-3xl px-16 py-2 bg-[#2f3235] outline-[#05F2F2] border text-center  '  value={user.name} name='name' placeholder='Enter Your Name' autoComplete='off' onChange={onChange} required/></span>
@@ -147,6 +151,7 @@ const Contact = (props) => {
                         </div>
 
                         <div >
+                        <input type="number" className='rounded-3xl px-16 py-2 bg-[#2f3235] outline-[#05F2F2] border text-center  mt-6 lg:mt-12 md:w-[100%]' value={user.number} name='number' placeholder='Your Mobile number' autoComplete='off' onChange={onChange} required/>
                         <input type="text" className='rounded-3xl px-16 py-2 bg-[#2f3235] outline-[#05F2F2] border text-center  mt-6 lg:mt-12 md:w-[100%]' value={user.subject} name='subject' placeholder='Your Subject' autoComplete='off' onChange={onChange} required/>
                         </div>
                         <div >
