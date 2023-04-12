@@ -9,6 +9,14 @@ import { Link } from 'react-router-dom';
 import "./Navbar.css"
 
 const Navbar = () => {
+
+    // function home(){
+    //     document.getElementById("home").style.display = "block";
+    // }
+
+    // function homeout(){
+    //     document.getElementById("home").style.display = "none";
+    // }
     return (
         <>
         {/* For Mobile viewfi! */}
@@ -22,18 +30,21 @@ const Navbar = () => {
         
         {/* For Laptop viewfi! */}
         <nav>
-            <ul className='mt-52 float-right   mr-6 fixed right-0  hidden lg:block'>
-                <li className="">
-                    <Link to="/" className="displaybtn bg-[#05F2F2] hover:bg-gray-300 float-right my-3  p-2  rounded-full  flex"> <span className='h2class mt-1 font-medium  mx-4 ' >HOME</span><HomeIcon className='hovering' sx={{ fontSize: 30 }} /> </Link>
+            <ul className='mt-52 float-right   mr-6 fixed right-0  hidden lg:block '>
+                <li  onMouseOver={()=>{document.getElementById("home").style.display = "block";}} onMouseOut={()=>{document.getElementById("home").style.display = "none";}}>
+                    <Link to="/" className="displaybtn bg-[#05F2F2] hover:bg-gray-300 float-right my-3  p-2  rounded-full  flex"> <span className='h2class mt-1 font-medium  mx-4 ' id='home' >HOME</span><HomeIcon className='hovering' sx={{ fontSize: 30 }} /> </Link>
                 </li>
-                <li>
-                    <Link to="/about" className=" btn bg-[#05F2F2] hover:bg-gray-300 float-right my-3  p-2 rounded-full flex"><h2 className='mt-1 font-medium hidden ' >HOME</h2> <AccountCircleIcon sx={{ fontSize: 30 }} /> </Link>
+
+                <li onMouseOver={()=>{document.getElementById("about").style.display = "block";}} onMouseOut={()=>{document.getElementById("about").style.display = "none";}}>
+                    <Link to="/about" className=" btn bg-[#05F2F2] hover:bg-gray-300 float-right my-3  p-2 rounded-full flex"><span className='h2class mt-1 font-medium  mx-4 ' id='about' >ABOUT</span><AccountCircleIcon sx={{ fontSize: 30 }} /> </Link>
                 </li>
-                <li>
-                    <Link to="/portfolio" className="btn bg-[#05F2F2] hover:bg-gray-300 float-right my-3  p-2 rounded-full "> <NotesIcon sx={{ fontSize: 30 }}/></Link>
+
+                <li onMouseOver={()=>{document.getElementById("portfolio").style.display = "block";}} onMouseOut={()=>{document.getElementById("portfolio").style.display = "none";}}>
+                    <Link to="/portfolio" className="btn bg-[#05F2F2] hover:bg-gray-300 float-right my-3  p-2 rounded-full flex"> <span className='h2class mt-1 font-medium  mx-4 ' id='portfolio' >PORTFOLIO</span> <NotesIcon sx={{ fontSize: 30 }}/></Link>
                 </li>
-                <li>
-                    <Link to="/contact" className="btn bg-[#05F2F2] hover:bg-gray-300 float-right my-3  p-2 rounded-full "> <MailIcon sx={{ fontSize: 30 }} /> </Link>
+
+                <li onMouseOver={()=>{document.getElementById("contact").style.display = "block";}} onMouseOut={()=>{document.getElementById("contact").style.display = "none";}}>
+                    <Link to="/contact" className="btn bg-[#05F2F2] hover:bg-gray-300 float-right my-3  p-2 rounded-full flex"> <span className='h2class mt-1 font-medium  mx-4 ' id='contact' >CONTACT</span><MailIcon sx={{ fontSize: 30 }} /> </Link>
                 </li>
             </ul>
         </nav>
