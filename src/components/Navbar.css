@@ -47,3 +47,15 @@ body{
     
 } */
 
+
+.slide-left {
+    animation: 0.5s slide-left;
+    }
+@keyframes slide-left {
+    from {
+        margin-left: 7%;
+    }
+    to {
+        margin-left: 0%;
+    }
+    }

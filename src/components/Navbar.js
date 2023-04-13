@@ -10,13 +10,66 @@ import "./Navbar.css"
 
 const Navbar = () => {
 
-    // function home(){
-    //     document.getElementById("home").style.display = "block";
-    // }
+    function homeover(){
+        document.getElementById("home").style.display = "block";
+        document.getElementById("tranformabout").style.transform = "scaleX(-1)";
+        document.getElementById("tranformportfolio").style.transform = "scaleX(-1)";
+        document.getElementById("tranformcontact").style.transform = "scaleX(-1)";
 
-    // function homeout(){
-    //     document.getElementById("home").style.display = "none";
-    // }
+    }
+
+    function homeout(){
+        document.getElementById("home").style.display = "none";
+        document.getElementById("tranformabout").style.transform = "none";
+        document.getElementById("tranformportfolio").style.transform = "none";
+        document.getElementById("tranformcontact").style.transform = "none";
+    }
+
+    function aboutover(){
+        document.getElementById("about").style.display = "block";
+        document.getElementById("tranformhome").style.transform = "scaleX(-1)";
+        document.getElementById("tranformportfolio").style.transform = "scaleX(-1)";
+        document.getElementById("tranformcontact").style.transform = "scaleX(-1)";
+
+    }
+
+    function aboutout(){
+        document.getElementById("about").style.display = "none";
+        document.getElementById("tranformhome").style.transform = "none";
+        document.getElementById("tranformportfolio").style.transform = "none";
+        document.getElementById("tranformcontact").style.transform = "none";
+    }
+
+    function portfolioover(){
+        document.getElementById("portfolio").style.display = "block";
+        document.getElementById("tranformhome").style.transform = "scaleX(-1)";
+        document.getElementById("tranformabout").style.transform = "scaleX(-1)";
+        document.getElementById("tranformcontact").style.transform = "scaleX(-1)";
+
+    }
+
+    function portfolioout(){
+        document.getElementById("portfolio").style.display = "none";
+        document.getElementById("tranformhome").style.transform = "none";
+        document.getElementById("tranformabout").style.transform = "none";
+        document.getElementById("tranformcontact").style.transform = "none";
+    }
+
+    function contactover(){
+        document.getElementById("contact").style.display = "block";
+        document.getElementById("tranformhome").style.transform = "scaleX(-1)";
+        document.getElementById("tranformabout").style.transform = "scaleX(-1)";
+        document.getElementById("tranformportfolio").style.transform = "scaleX(-1)";
+
+    }
+
+    function contactout(){
+        document.getElementById("contact").style.display = "none";
+        document.getElementById("tranformhome").style.transform = "none";
+        document.getElementById("tranformabout").style.transform = "none";
+        document.getElementById("tranformportfolio").style.transform = "none";
+    }
+    
     return (
         <>
         {/* For Mobile viewfi! */}
@@ -27,24 +80,24 @@ const Navbar = () => {
             <Link to="/contact" className="nav-link"> <MailIcon fontSize="large" className='rounded-2xl border p-1 bg-gray-400 active:bg-[#05F2F2]'/> </Link>
         </nav>
 
-        
         {/* For Laptop viewfi! */}
+        {/* hover:bg-gray-300  */}
         <nav>
             <ul className='mt-52 float-right   mr-6 fixed right-0  hidden lg:block '>
-                <li  onMouseOver={()=>{document.getElementById("home").style.display = "block";}} onMouseOut={()=>{document.getElementById("home").style.display = "none";}}>
-                    <Link to="/" className="displaybtn bg-[#05F2F2] hover:bg-gray-300 float-right my-3  p-2  rounded-full  flex"> <span className='h2class mt-1 font-medium  mx-4 ' id='home' >HOME</span><HomeIcon className='hovering' sx={{ fontSize: 30 }} /> </Link>
+                <li  id='tranformhome' onMouseOver={homeover} onMouseOut={homeout}>
+                    <Link to="/" className=" bg-[#05F2F2]   my-6  p-2 min-w-min  w-[10%] grow-0 right-0 items-end  rounded-full  flex"> <p className='slide-left mt-1 font-medium  mx-4 hidden' id='home' >HOME</p><HomeIcon className='hovering' sx={{ fontSize: 30 }} /> </Link>
                 </li>
 
-                <li onMouseOver={()=>{document.getElementById("about").style.display = "block";}} onMouseOut={()=>{document.getElementById("about").style.display = "none";}}>
-                    <Link to="/about" className=" btn bg-[#05F2F2] hover:bg-gray-300 float-right my-3  p-2 rounded-full flex"><span className='h2class mt-1 font-medium  mx-4 ' id='about' >ABOUT</span><AccountCircleIcon sx={{ fontSize: 30 }} /> </Link>
+                <li  id='tranformabout'  onMouseOver={aboutover} onMouseOut={aboutout}>
+                    <Link to="/about" className=" btn bg-[#05F2F2]  my-6  p-2 min-w-min  w-[10%] grow-0  right-0 items-end  rounded-full flex "><p className='slide-left mt-1 font-medium  mx-4 hidden' id='about' >ABOUT</p><AccountCircleIcon sx={{ fontSize: 30 }} /> </Link>
                 </li>
 
-                <li onMouseOver={()=>{document.getElementById("portfolio").style.display = "block";}} onMouseOut={()=>{document.getElementById("portfolio").style.display = "none";}}>
-                    <Link to="/portfolio" className="btn bg-[#05F2F2] hover:bg-gray-300 float-right my-3  p-2 rounded-full flex"> <span className='h2class mt-1 font-medium  mx-4 ' id='portfolio' >PORTFOLIO</span> <NotesIcon sx={{ fontSize: 30 }}/></Link>
+                <li id='tranformportfolio' onMouseOver={portfolioover} onMouseOut={portfolioout}>
+                    <Link to="/portfolio" className="btn bg-[#05F2F2]  my-6 p-2 min-w-min w-[10%] grow-0 right-0 items-end  rounded-full flex"> <p className='slide-left mt-1 font-medium  mx-4 hidden' id='portfolio' >PORTFOLIO</p> <NotesIcon sx={{ fontSize: 30 }}/></Link>
                 </li>
 
-                <li onMouseOver={()=>{document.getElementById("contact").style.display = "block";}} onMouseOut={()=>{document.getElementById("contact").style.display = "none";}}>
-                    <Link to="/contact" className="btn bg-[#05F2F2] hover:bg-gray-300 float-right my-3  p-2 rounded-full flex"> <span className='h2class mt-1 font-medium  mx-4 ' id='contact' >CONTACT</span><MailIcon sx={{ fontSize: 30 }} /> </Link>
+                <li id='tranformcontact' onMouseOver={contactover} onMouseOut={contactout}>
+                    <Link to="/contact" className="btn bg-[#05F2F2]   my-6  p-2 min-w-min w-[10%] grow-0 right-0 items-end  rounded-full flex"> <p className='slide-left mt-1 font-medium  mx-4 hidden' id='contact' >CONTACT</p><MailIcon sx={{ fontSize: 30 }} /> </Link>
                 </li>
             </ul>
         </nav>

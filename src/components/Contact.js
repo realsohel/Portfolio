@@ -87,7 +87,7 @@ const Contact = (props) => {
                 <h2 className=' mt-20 ml-20  sm:w-[54%] justify-center  float-right font-bold  md:text-4xl text-3xl  lg:text-6xl text-white lg:mr-32 mb-6 '>GET IN <span className='text-[#05F2F2] ' >TOUCH</span></h2>
             </div>
 
-        <div className=" float-right w-[75%] md:w-[40%] lg:w-[30%] fixed right-0 animate__animated  animate__backInRight hidden z-[120]" id='alertdiv'><Alertcon alert={alert}  /></div>
+        <div className="slide-left float-right w-[75%] md:w-[40%] lg:w-[30%] fixed right-0  hidden z-[120]" id='alertdiv'><Alertcon alert={alert}  /></div>
 
         
 

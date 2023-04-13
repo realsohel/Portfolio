@@ -53,3 +53,18 @@ input::-webkit-inner-spin-button {
 /* input[type=number] {
     -moz-appearance: textfield;
 } */
+
+
+
+
+.slide-left {
+    animation: 0.8s slide-left;
+    }
+@keyframes slide-left {
+    from {
+        margin-left: 100%;
+    }
+    to {
+        margin-left: 0%;
+    }
+    }
