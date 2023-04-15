@@ -1,6 +1,5 @@
 
 import { useState } from 'react';
-import './App.css';
 import Home from './components/Home';
 import ModeBtn from './components/ModeBtn';
 import Navbar from './components/Navbar';

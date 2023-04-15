@@ -2,19 +2,19 @@ let achievement = [
     {   
         id:"A01",
         name:"FINALIST -",
-        desc:"Was finalist of one of the biggest Hackathon in the world, Smart India Hackathon(SIH) 2022.",
+        desc:"Participated in a team working on a problem statement in the Software Edition of Smart India Hackathon 2022, one of the biggest hackathons in the world. Attended the Grand Finale of the hackathon at Vignana Bharathi Institute of Technology in Hyderabad.",
         img:"/images/achivement_img/sihlogo.webp"
     },
     {   
         id:"A02",
         name:"5 STAR -",
-        desc:"Secured 5 star at HackerRank Problem solving category with more than 850 points. Also achieved 2 star in C++ Category.",
+        desc:"attained a 5 star rating (and counting) in the Problem Solving category on HackerRank with more than 850 points.",
         img:"/images/achivement_img/HackerRank_logo.webp"
     },
     {   
         id:"A03",
         name:"250+ ",
-        desc:"Achieved 250+ coding score at Geeks-For-Geeks and solved more than 80 problems. ",
+        desc:"At the Geeks for Geeks platform, I achieved a coding score of 270+ by resolving more than 85 challenging coding challenges.",
         img:"/images/achivement_img/GeeksforGeeks_logo.webp"
     },
     {
@@ -26,7 +26,7 @@ let achievement = [
     {   
         id:"A05",
         name:"EXTRA CULLICULAR -",
-        desc:"Was finalist of one of the biggest Hackathon in the world, Smart India Hackathon(SIH) 2022.",
+        desc:"Won numerous athletics, singing, essay, and other competitions during high school and junior college.",
         img:"/images/achivement_img/extra_cullicular.webp"
     },
 ];

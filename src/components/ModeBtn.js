@@ -1,10 +1,6 @@
 import React from 'react'
 import LightModeIcon from '@mui/icons-material/LightMode';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
-// import HomeIcon from '@mui/icons-material/Home';
-// import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-// import MailIcon from '@mui/icons-material/Mail';
-// import { Link } from 'react-router-dom';
 
 const ModeBtn = (props) => {
     return (

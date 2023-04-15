@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import 'animate.css';
 // import { Link } from 'react-router-dom';
-import "./Button.css"
+import "../assets/Button.css"
 
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import EmailIcon from '@mui/icons-material/Email';
@@ -74,7 +74,7 @@ const Contact = (props) => {
         }
         else{
             document.getElementById('alertdiv').style.display="block";
-            showAlert("Please fill all the fields.","error");
+            showAlert("Please fill all the fields correctly.","error");
         }
 
         
@@ -83,7 +83,7 @@ const Contact = (props) => {
     return (
         <>
         <div className='text-white'>
-            <div className='mr-24 sm:mr-48 lg:mr-16'>
+            <div className='header_slide-left mr-24 sm:mr-48 lg:mr-16'>
                 <h2 className=' mt-20 ml-20  sm:w-[54%] justify-center  float-right font-bold  md:text-4xl text-3xl  lg:text-6xl text-white lg:mr-32 mb-6 '>GET IN <span className='text-[#05F2F2] ' >TOUCH</span></h2>
             </div>
 
@@ -94,10 +94,10 @@ const Contact = (props) => {
             <div className="block lg:flex mt-8 lg:mt-8 float-right w-[100%]">
                 <div className="message ml-6 lg:ml-16 ">
 
-                    <div className="md:text-3xl text-2xl  lg:text-4xl font-bold ">DON'T BE SHY !</div>
-                    <div className="mt-4 lg:mt-6 font-semibold">Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</div>
+                    <div className="slide-right md:text-3xl text-2xl  lg:text-4xl font-bold ">DON'T BE SHY !</div>
+                    <div className="slide-right mt-4 lg:mt-6 font-semibold">Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</div>
                     
-                    <div className=' 1st mt-8 lg:mt-10'>
+                    <div className='fade-in 1st mt-8 lg:mt-10'>
                         <div >
                             <span className="   w-[20%] rounded-full p-2 bg-[#05F2F2] text-black"><LocationOnIcon /></span>
                             <span className='mx-4 border px-3  rounded-xl text-sm bg-[#323232] text-gray-200' >ADDRESS: </span>
@@ -143,7 +143,7 @@ const Contact = (props) => {
 
 
 
-                <div className="ml-6 lg:ml-20 mt-10 mb-20 ">
+                <div className="fade-in  ml-6 lg:ml-20 mt-10 mb-20 ">
                     <form className="form mr-32" method='POST'>
                         <div className="md:flex md:space-x-6">
                         <span><input type="text" className='rounded-3xl px-16 py-2 bg-[#2f3235] outline-[#05F2F2] border text-center  '  value={user.name} name='name' placeholder='Enter Your Name' autoComplete='off' onChange={onChange} required/></span>

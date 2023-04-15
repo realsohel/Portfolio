@@ -1,12 +1,12 @@
 import React from 'react'
-// import { Link } from "react-router-dom";
+
 import HomeIcon from '@mui/icons-material/Home';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import MailIcon from '@mui/icons-material/Mail';
 import NotesIcon from '@mui/icons-material/Notes';
 import { Link } from 'react-router-dom';
 
-import "./Navbar.css"
+import "../assets/Navbar.css"
 
 const Navbar = () => {
 

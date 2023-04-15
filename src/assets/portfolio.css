@@ -1,0 +1,37 @@
+
+.fade-in {
+    animation: fadeIn ease 4s;
+    }
+    @keyframes fadeIn{
+        0% {
+        opacity:0;
+        }
+        100% {
+        opacity:1;
+        }
+    }
+
+.slide_left {
+    animation: 1.5s slide_left;
+    }
+@keyframes slide_left {
+    from {
+        margin-left: 30%;
+    }
+    to {
+        margin-left: 0%;
+    }
+    }
+
+.slide_right {
+    animation: 2s slide_right;
+    }
+    @keyframes slide_right{
+        from {
+        margin-left: -100%;
+        }
+        to {
+        margin-left: 0%;
+        }
+    }
+    

@@ -58,7 +58,7 @@ input::-webkit-inner-spin-button {
 
 
 .slide-left {
-    animation: 0.8s slide-left;
+    animation: 1s slide-left;
     }
 @keyframes slide-left {
     from {
@@ -67,4 +67,53 @@ input::-webkit-inner-spin-button {
     to {
         margin-left: 0%;
     }
+    }
+
+    
+    .slide-right {
+        animation: 1s slide-right;
+    }
+    @keyframes slide-right {
+        from {
+            margin-left: -100%;
+        }
+        to {
+            margin-left: 0%;
+        }
+    }
+
+.fade-in {
+        animation: fadeIn ease 4s;
+        }
+        @keyframes fadeIn{
+            0% {
+            opacity:0;
+            }
+            100% {
+            opacity:1;
+            }
+        }
+
+    .header_slide-left {
+        animation: 1s slide-left;
+        }
+    @keyframes slide-left {
+        from {
+            margin-left: 100%;
+        }
+        to {
+            margin-left: 0%;
+        }
+        }
+
+.download_left {
+    animation: 1.5s download_left;
+    }
+    @keyframes download_left {
+        from {
+        margin-left: 100%;
+        }
+        to {
+        margin-left: 0%;
+        }
     }

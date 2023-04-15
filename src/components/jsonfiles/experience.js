@@ -5,28 +5,28 @@
             "year":"PRESENT",
             "education":"INDUSTRY EXPERIENCE",
             "university": "NONE",
-            "desc":"In the learning stage, hence Industry Experience is none."
+            "desc":"Since I am still learning, there is no industry experience."
         },
         {
             "id":"1",
             "year":"2021 - PRESENT",
             "education":"BACHELOR DEGREE",
             "university": " MUMBAI UNIVERSITY",
-            "desc":"Currently doing BSC Computer Science from R.D National College, Mumbai."
+            "desc":"Currently pursuing a BSC in computer science at Mumbai's RD & SH National College."
         },
         {
             "id":"2",
             "year":"2019 - 2021",
-            "education":"SECONDARY EDUCATION",
+            "education":"SENIOR  SECONDARY EDUCATION (XII)",
             "university": "MAHARASHTRA BOARD",
-            "desc":"Completed HSC with 96% from R.D National College, Mumbai."
+            "desc":"Completed my HSC at Mumbai's RD & SH National College with 96.17%."
         },
         {
             "id":"3",
             "year":"2019",
-            "education":"PRIMARY EDUCATION",
+            "education":"SECONDARY EDUCATION(X)",
             "university": "  MAHARASHTRA BOARD",
-            "desc":" Completed SSC with 86% from B.P.M High School, Mumbai."
+            "desc":"Completed SSC with 86.20% from B.P.M High School, Mumbai."
         },
         
     ]
