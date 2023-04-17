@@ -3,15 +3,29 @@
 let portfolio = [
 
     {
-        "id":"p08",
+        "id":"p10",
+        "title":"My Portfolio",
+        "desc":"It is my own portfolio website, where I have included information about myself,my projects, and how to get in touch with me. On it, viewers can also send me their name, email, phone number, etc. to get in touch with me. It was created using the React.js, Tailwind CSS, and Firebase Database frameworks.",
+        "img":"images/portfolio_imgs/myportfolio.webp",
+        "link": "https://github.com/realsohel/Portfolio"
+    },
+    {
+        "id":"p09",
         "title":"Only Notes",
         "desc":"OnlyNotes is an online application for creating notes where you may store your notes in a database and edit, read, and remove them as needed. It is a full-stack application with a database connection created in MERN (Mongo, Express, React.js and Node.js), where I had completed all CRUD operations. ",
         "img":"images/portfolio_imgs/onlynotes.webp",
         "link": "https://github.com/realsohel/OnlyNotes-"
     },
     {
+        "id":"p08",
+        "title":"Only News",
+        "desc":"OnlyNews is a news application similar to 'Lets News' but its for Android and IOS , made in Flutter. ",
+        "img":"images/portfolio_imgs/OnlyNews.webp",
+        "link": "https://github.com/realsohel/OnlyNews-mobileapp"
+    },
+    {
         "id":"p07",
-        "title":"Lets News",
+        "title":"Lets News - WebApp",
         "desc":"Lets News- is a news app that lets you read the top headlines and most recent news from a given nation. Additionally, it offers news depending on areas, such as sports, business, technology, and science. ",
         "img":"images/portfolio_imgs/news.webp",
         "link": "https://github.com/realsohel/LetsNews-Reactapp"

@@ -15,13 +15,13 @@ const Home = () => {
         {/* color-block hidden lg:block */}
         <div id="pt-main" className="pt-perspective" >
             <div className="pt-page pt-page-1">
-                <div className=" ">
+                <div className=" "> {/* MOBILE IMG */}
                     <div className="color-block hidden lg:block"></div>
                     <div className="fade-in lg:hidden  justify-center align-middle  w-[50%] m-auto">
-                        <img src="/images/my_pic_mobile.png" alt="man" className='mt-6  m-auto' />
+                        <img src="/images/my_pic_mobile.png" alt="man" className='slide-down mt-6  m-auto' />
                     </div>
 
-                    <div className="lg:flex   ">
+                    <div className="lg:flex   "> {/* LAPTOP IMG */}
                         <div className='lg_image boder lg:block rounded-3xl hidden  mt-12 ml-24 h-[34rem] w-[40%]  z-10'>
                         <img src="/images/my_pic.jpeg" alt="man" className='img_slide_right h-[100%] w-[78%]  rounded-3xl border border-[#05F2F2]' />
                         </div>
@@ -33,7 +33,7 @@ const Home = () => {
                                 websites that improves the lives of those around me. Currently studying back-end development as well.
                             </p>
                             <div>
-                                <a href="images/resume.pdf" download className='button download_left font-bold px-2 border border-white'>Download Cv <span><DownloadIcon/></span> </a>
+                                <a href="images/SohelCV.pdf" download className='button download_left_slide font-bold px-2 border border-white'>Download My CV <span><DownloadIcon/></span> </a>
                             </div>
                         </div>
                     </div>

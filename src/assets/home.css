@@ -28,10 +28,10 @@
         }
     }
 
-.download_left {
-    animation: 1.5s download_left;
+.download_left_slide {
+    animation: 1.5s download_left_slide;
     }
-@keyframes download_left {
+@keyframes download_left_slide {
     from {
         margin-left: 100%;
     }
@@ -51,13 +51,16 @@
         margin-left: 0%;
         }
     }
-    
-/* .lg_image { */
-    /* background-color: blue ; */
-    /* border: 2px solid white; */
-    /* margin-top: 200px; */
-    /* margin-left: 100px; */
-    /* height: 400px; */
-    /* width: 35%; */
-    /* z-index: 1; */
-/* } */
+
+
+.slide-down {
+    animation: 1.5s slide-down;
+    }
+    @keyframes slide-down{
+        from {
+        margin-bottom: -100%;
+        }
+        to {
+        margin-bottom: 0%;
+        }
+    }

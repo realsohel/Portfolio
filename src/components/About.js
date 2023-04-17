@@ -58,7 +58,7 @@ const About = () => {
                     </ul>
                 </div>
                 <div>
-                    <a href="images/resume.pdf" download className='button download_left font-bold px-2 border border-white ml-20  lg:ml-[34rem] '>Download Cv <span><DownloadIcon/></span> </a>
+                    <a href="images/SohelCV.pdf" download className='button download_left font-bold px-2 border border-white ml-20  lg:ml-[34rem] '>Download My CV <span><DownloadIcon/></span> </a>
                 </div>
                 
             <hr className='m-auto w-[80%]  mt-10'/>
