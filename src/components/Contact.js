@@ -18,6 +18,8 @@ import { db } from '../firebase-config';
 import {collection , addDoc} from "firebase/firestore";
 
 const Contact = (props) => {
+
+    document.title="MohdSohelPortfolio-ContactMe"
     
     useEffect(() => {
         window.scrollTo(0, 0)

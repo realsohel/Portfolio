@@ -4,6 +4,8 @@ import "../assets/home.css"
 import "../assets/Button.css"
 import DownloadIcon from '@mui/icons-material/Download';
 const Home = () => {
+    
+    document.title="MohdSohelPortfolio-Home"
 
     useEffect(() => {
         window.scrollTo(0, 0);

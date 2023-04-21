@@ -8,6 +8,8 @@ import "../assets/portfolio.css"
 
 const Portfolio = () => {
 
+    document.title="MohdSohelPortfolio-MyPortfolio"
+
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])

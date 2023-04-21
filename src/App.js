@@ -27,7 +27,7 @@ function App() {
   //         setAlert({msg:""});
   //     }, 3000);
   // }
-
+  
 
   const togglemode = ()=>{
     if(mode ==='dark'){

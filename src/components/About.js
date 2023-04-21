@@ -7,9 +7,13 @@ import "../assets/Button.css"
 import DownloadIcon from '@mui/icons-material/Download';
 
 const About = () => {
+
+    document.title="MohdSohelPortfolio-AboutMe"
+    
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])
+
 
     return (
         <> 
