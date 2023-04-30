@@ -1,5 +1,5 @@
 
-import { useState } from 'react';
+import {  useState } from 'react';
 import Home from './components/Home';
 import ModeBtn from './components/ModeBtn';
 import Navbar from './components/Navbar';
@@ -28,6 +28,7 @@ function App() {
   //     }, 3000);
   // }
   
+  
 
   const togglemode = ()=>{
     if(mode ==='dark'){
@@ -41,6 +42,11 @@ function App() {
   
     }
   }
+
+//   useEffect(() => {
+//     window.scrollTo(0, 0);
+// }, [])
+
   return (
     <>
     <BrowserRouter>

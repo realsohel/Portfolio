@@ -22,7 +22,7 @@ const Contact = (props) => {
     document.title="MohdSohelPortfolio-ContactMe"
     
     useEffect(() => {
-        window.scrollTo(0, 0)
+        window.scrollTo(0, 0);
     }, [])
 
     const[user , setUser] = useState({name: "", email: "", subject:"" , msg:"" ,number:"", date:""});
