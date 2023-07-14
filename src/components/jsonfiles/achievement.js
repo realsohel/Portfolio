@@ -13,8 +13,8 @@ let achievement = [
     },
     {   
         id:"A03",
-        name:"250+ ",
-        desc:"At the Geeks for Geeks platform, I achieved a coding score of 270+ by resolving more than 85 challenging coding challenges.",
+        name:"290+ ",
+        desc:"At the Geeks for Geeks platform, I achieved a coding score of 290+ by resolving more than 90 challenging coding challenges.",
         img:"/images/achivement_img/GeeksforGeeks_logo.webp"
     },
     {

@@ -106,7 +106,7 @@ const Contact = (props) => {
                         </div>
 
                         <div className="ml-12 mt-2">
-                            <span className='font-bold '> A/103, Star Apt, Santacruz(W),<br /> Mumbai-400054 </span>
+                            <span className='font-bold '> A/103, Star Apt, Nallasopara(W),<br /> Palghar-401203 </span>
                         </div>
                     </div>
 
@@ -142,9 +142,6 @@ const Contact = (props) => {
 
                 </div>
                 <hr className='block md:hidden'/>
-
-
-
                 <div className="fade-in  ml-6 lg:ml-20 mt-10 mb-20 ">
                     <form className="form mr-32" method='POST'>
                         <div className="md:flex md:space-x-6">
