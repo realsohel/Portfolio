@@ -3,12 +3,19 @@
 let portfolio = [
 
     {
-        "id":"p10",
+        "id":"p11",
         "title":"My Portfolio",
         "desc":"It is my own portfolio website, where I have included information about myself,my projects, and how to get in touch with me. On it, viewers can also send me their name, email, phone number, etc. to get in touch with me. It was created using the React.js, Tailwind CSS, and Firebase Database frameworks.",
         "img":"images/portfolio_imgs/myportfolio.webp",
         "link": "https://github.com/realsohel/Portfolio"
     },
+    {
+        "id":"p10",
+        "title":"WeatherWave",
+        "desc":"It is a weather web-app that displays a city's current temperature, humidity, pressure, wind, and other conditions in both degrees and Fahrenheit.",
+        "img":"images/portfolio_imgs/weather_img.webp",
+        "link": "https://github.com/realsohel/Weather-App"
+    },    
     {
         "id":"p09",
         "title":"Only Notes",
@@ -58,13 +65,7 @@ let portfolio = [
         "img":"images/portfolio_imgs/iquiz.webp",
         "link": "https://github.com/realsohel/iQuiz-app"
     },
-    // {
-    //     "id":"p07",
-    //     "title":"Calculator",
-    //     "desc":"It is a Calculator app where you can perform basic arithmetic operations. ",
-    //     "img":"images/calculator2.webp",
-    //     "link": "https://github.com/realsohel/TICTACTOE"
-    // },
+    
     {
         "id":"p02",
         "title":"Stop Watch",

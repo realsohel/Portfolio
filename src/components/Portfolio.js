@@ -1,14 +1,11 @@
 import React, { useEffect } from 'react'
-// import manlg from "images/man.jpg"
-// import tictactoe from "./tictactoe.jpg"
-// import passwordgenerator from "./passwordgenerator.jpg"
 import portfolio from './jsonfiles/portfolio'
 import "../assets/portfolio.css"
 
 
 const Portfolio = () => {
 
-    document.title="MohdSohelPortfolio-MyPortfolio"
+    document.title="MohdSohelPortfolio-MyProjects"
 
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -17,7 +14,7 @@ const Portfolio = () => {
         <>
         <div>
             <div className='slide_left mr-24 sm:mr-48 lg:mr-16'>
-                <h2 className=' mt-20 ml-20  sm:w-[54%] justify-center  float-right font-bold  md:text-4xl text-3xl  lg:text-6xl text-white lg:mr-32 mb-6 '>MY<span className='text-[#05F2F2] ' > PORTFOLIO</span></h2>
+                <h2 className=' mt-20 ml-20  sm:w-[54%] justify-center  float-right font-bold  md:text-4xl text-3xl  lg:text-6xl text-white lg:mr-32 mb-6 '>MY<span className='text-[#05F2F2] ' > PROJECTS</span></h2>
             </div>
 
             <div className="card-box block md:flex md:flex-wrap   lg:mt-4   float-right w-[92%]   mb-48">

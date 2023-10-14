@@ -93,7 +93,7 @@ const Navbar = () => {
                 </li>
 
                 <li id='tranformportfolio' onMouseOver={portfolioover} onMouseOut={portfolioout}>
-                    <Link to="/portfolio" className="btn bg-[#05F2F2]  my-6 p-2 min-w-min w-[10%] grow-0 right-0 items-end  rounded-full flex"> <p className='slide-left mt-1 font-medium  mx-4 hidden' id='portfolio' >PORTFOLIO</p> <NotesIcon sx={{ fontSize: 30 }}/></Link>
+                    <Link to="/portfolio" className="btn bg-[#05F2F2]  my-6 p-2 min-w-min w-[10%] grow-0 right-0 items-end  rounded-full flex"> <p className='slide-left mt-1 font-medium  mx-4 hidden' id='portfolio' >PROJECTS</p> <NotesIcon sx={{ fontSize: 30 }}/></Link>
                 </li>
 
                 <li id='tranformcontact' onMouseOver={contactover} onMouseOut={contactout}>

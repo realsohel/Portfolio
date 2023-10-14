@@ -5,10 +5,13 @@ import Skills from './Skills'
 
 import "../assets/Button.css"
 import DownloadIcon from '@mui/icons-material/Download';
+import CircularBar from './CircularBar'
+import skills from './jsonfiles/skills'
 
 const About = () => {
 
     document.title="MohdSohelPortfolio-AboutMe"
+
     
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -45,7 +48,7 @@ const About = () => {
                         </li>
                         <li className='slide-left mt-4 ml-6 lg:ml-60'>
                             <span className='font-semibold lg:text-xl  text-md opacity-[0.8]'>Age: </span>
-                            <span  className='font-bold text-md lg:text-2xl md:text-xl'>19 Years </span>
+                            <span  className='font-bold text-md lg:text-2xl md:text-xl'>{new Date().getFullYear()-2003} </span>
                         </li>
                         <li className='slide-right mt-4'>
                             <span className='font-semibold lg:text-xl text-md  opacity-[0.8]'>Nationality: </span>
@@ -53,7 +56,7 @@ const About = () => {
                         </li>
                         <li className='slide-left mt-4 ml-6 lg:ml-60'>
                             <span className='font-semibold lg:text-xl  text-md opacity-[0.8]'>For Intern: </span>
-                            <span  className='font-bold text-md lg:text-2xl md:text-xl text-green-500'>Available </span>
+                            <span  className='font-bold text-md lg:text-2xl md:text-xl text-[#05F2F2]'>Available </span>
                         </li>
                         <li className='slide-right mt-4'>
                             <span className='font-semibold lg:text-xl text-md  opacity-[0.8]'>Phone: </span>
@@ -72,8 +75,14 @@ const About = () => {
                 <h2 className='mt-10 font-bold  md:text-2xl text-xl lg:text-2xl'>MY SKILLS</h2>
             </div>
             {/* lg:mr-48 */}
-            <div className='skill-box float-right mr-28 md:mr-36 '>
-                <Skills/>
+            <div className='skill-box float-right mr-28 md:mr-36 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 sm:ml-8 lg:ml-24'>
+                {/* <Skills/> */}
+
+                {skills.map((e,index)=>{
+                    return <div className="" key={index}>
+                        <CircularBar value={e.value} name={e.name}/>
+                    </div>
+                })}
             </div>
 
             <hr className='m-auto w-[80%]  mt-10'/>
