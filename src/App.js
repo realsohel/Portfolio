@@ -17,18 +17,6 @@ function App() {
   
   // document.body.style.backgroundColor='#343a40';
   const [mode , setmode] = useState('light');
-  // const [alert, setAlert] = useState({msg:""});
-
-  // const showAlert = (message)=>{
-  //     setAlert({
-  //       msg: message,
-  //     })
-  //     setTimeout(() => {
-  //         setAlert({msg:""});
-  //     }, 3000);
-  // }
-  
-  
 
   const togglemode = ()=>{
     if(mode ==='dark'){
@@ -43,10 +31,6 @@ function App() {
     }
   }
 
-//   useEffect(() => {
-//     window.scrollTo(0, 0);
-// }, [])
-
   return (
     <>
     <BrowserRouter>
@@ -58,9 +42,6 @@ function App() {
         <Route exact path='/portfolio' element={<Portfolio/>}/>
         <Route exact path='/contact' element={<Contact />}/>
       </Routes>
-
-    
-      
     </BrowserRouter>
     </>
   );

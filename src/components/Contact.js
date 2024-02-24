@@ -106,7 +106,7 @@ const Contact = (props) => {
                         </div>
 
                         <div className="ml-12 mt-2">
-                            <span className='font-bold '> A/103, Star Apt, Nallasopara(W),<br /> Palghar-401203 </span>
+                            <span className='font-bold '> Santacruz (West), Mumbai - 400054</span>
                         </div>
                     </div>
 
@@ -158,7 +158,7 @@ const Contact = (props) => {
                         </div>
 
                         <div className="mt-12 ">
-                        <button onClick={PostData} className="button font-bold ">SEND MESSAGE  <span ><SendIcon/></span></button>
+                        <button onClick={PostData} className="button font-bold px-12 p-[1rem] md:px-0">SEND MESSAGE  <span ><SendIcon/></span></button>
                         
                         </div>
                     </form>

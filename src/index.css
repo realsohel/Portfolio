@@ -8,8 +8,8 @@ body{
 
 .circular-progress-bar {
     position: relative;
-    height: 150px;
-    width: 150px;
+    height: 180px;
+    width: 180px;
     background-color: #05F2F2;
     border-radius: 50%; 
     display: grid;
@@ -23,3 +23,59 @@ body{
     background-color: #343a40 ;
     border-radius: 50%;
     }
+
+.skill-box{
+    justify-content: space-between;
+}
+
+.paddings {
+    padding: 1.5rem;
+}
+.innerWidth {
+width: 100%;
+}
+
+.flexCenter {
+    display: flex;
+    row-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.flexColCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flexColStart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.flexStart {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* @media only screen and (max-width: 1000px) {
+    .skill-box{
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-gap: 16px;
+    }
+}
+@media only screen and (max-width: 590px) {
+    .skill-box{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-gap: 16px;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .skill-box{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        grid-gap: 16px;
+    }
+} */

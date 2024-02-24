@@ -10,6 +10,7 @@ const Portfolio = () => {
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])
+
     return (
         <>
         <div>
@@ -17,19 +18,36 @@ const Portfolio = () => {
                 <h2 className=' mt-20 ml-20  sm:w-[54%] justify-center  float-right font-bold  md:text-4xl text-3xl  lg:text-6xl text-white lg:mr-32 mb-6 '>MY<span className='text-[#05F2F2] ' > PROJECTS</span></h2>
             </div>
 
-            <div className="card-box block md:flex md:flex-wrap   lg:mt-4   float-right w-[92%]   mb-48">
+            <div className="card-box block md:flex md:flex-wrap   lg:mt-4   float-right w-[92%]   mb-16">
                 
                 {portfolio.map((e)=>{
 
-                    return <div key={e.id} className="card  fade-in shadow-lg shadow-cyan-500/50 w-[100%] md:w-[35%] lg:w-[25%] h-[350px] md:h-[390px] lg:h-[360px] mt-10 float-right rounded-md mr-4 md:ml-16 lg:ml-8  ">
+                    return <div key={e.id} className="card  fade-in shadow-lg shadow-cyan-500/50 w-[100%] md:w-[35%] lg:w-[25%] h-[390px] md:h-[390px] lg:h-[360px] mt-10 float-right rounded-md mr-4 md:ml-16 lg:ml-8  ">
                         <a href={e.link} target={"_blank"} rel="noreferrer" >
-                            <img src={e.img} alt="" className='fade-in lg:max-w-[100%] w-[800px] h-[200px] lg:h-[198px] rounded-md hover:opacity-80 cursor-pointer' /></a>
+                            <img src={e.img} alt="" className='fade-in lg:max-w-[100%] w-[800px] h-[200px] lg:h-[198px] rounded-md hover:opacity-80 cursor-pointer' />
+                        </a>
 
                         <div className="fade-in ml-2 font-medium mt-2 text-white">{e.desc?e.desc.slice(0,70):""}...</div>
 
-                        <a href={e.link} rel="noreferrer" target={"_blank"} className=' ml-2 text-sm  text-white mt-2 mb-2'>Github Link: <span className='text-blue-400'> {e.link?e.link.slice(0,27):""}...</span></a>
-
-                        <div className="ml-2 mt-4   absolute transform  font-bold  bg-[#05F2F2] text-xl outline-none px-2 rounded-md cursor-pointer"> <a href={e.link} rel="noreferrer" target={"_blank"} > {e.title}</a> </div>
+                        <a href={e.link} rel="noreferrer" target={"_blank"} className=' ml-2 text-sm  text-white mt-2 mb-2'>
+                            Github Link: 
+                            <span className='text-blue-400'> 
+                                {e.link?e.link.slice(0,27):""}...
+                            </span>
+                        </a>
+                        <div className="sm:flex block">
+                            <div className="mx-2 mt-4 md:w-3/4 w-1/2 text-center transform  font-bold  bg-[#05F2F2] text-xl outline-none px-2 rounded-md cursor-pointer"> 
+                                <a href={e.link} rel="noreferrer" target={"_blank"} > 
+                                    {e.title}
+                                </a> 
+                            </div>
+                            {e.webLink?(
+                                <div className="mx-2 mt-4  text-center  md:w-1/2 w-1/2 transform  font-bold  bg-[#05F2F2] text-xl outline-none px-2 rounded-md cursor-pointer"><a href={e.webLink} rel="noreferrer" target={"_blank"} > Demo </a> </div>
+                            ):
+                            ""
+                            }
+                            
+                        </div>
                     </div>
                 })}
 

@@ -3,18 +3,35 @@
 let portfolio = [
 
     {
-        "id":"p11",
+        "id":"p13",
         "title":"My Portfolio",
         "desc":"It is my own portfolio website, where I have included information about myself,my projects, and how to get in touch with me. On it, viewers can also send me their name, email, phone number, etc. to get in touch with me. It was created using the React.js, Tailwind CSS, and Firebase Database frameworks.",
         "img":"images/portfolio_imgs/myportfolio.webp",
-        "link": "https://github.com/realsohel/Portfolio"
+        "link": "https://github.com/realsohel/Portfolio",
+        "webLink": "https://mohdsohel.is-a.dev/",
+    },
+    {
+        "id":"p12",
+        "title":"Doctor's Appointment system",
+        "desc":"It is a Patient-Doctor appoinment system. It is a full-stack MERN project.",
+        "img":"images/portfolio_imgs/patient-doctor.webp",
+        "link": "https://github.com/realsohel/MedAppoint-PatientDoctorAppointmentSystem", 
+    },
+    {
+        "id":"p11",
+        "title":"Netflix Clone",
+        "desc":"It is a Netflix website Clone, made using React Js and Tailwind CSS. The movie API is used from TMDB movie API",
+        "img":"images/portfolio_imgs/netflix.webp",
+        "link": "https://github.com/realsohel/Netflix-clone",
+        "webLink":"https://netflix-clone-realsohel.vercel.app/", 
     },
     {
         "id":"p10",
         "title":"WeatherWave",
         "desc":"It is a weather web-app that displays a city's current temperature, humidity, pressure, wind, and other conditions in both degrees and Fahrenheit.",
         "img":"images/portfolio_imgs/weather_img.webp",
-        "link": "https://github.com/realsohel/Weather-App"
+        "link": "https://github.com/realsohel/Weather-App",
+        "webLink":"https://weatherwave54.vercel.app/"
     },    
     {
         "id":"p09",
